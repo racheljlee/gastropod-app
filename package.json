@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "gastropod",
+=======
+  "name": "gastropod-app",
+>>>>>>> f97cc50486f095fdffd47fe1ea3faca992220eb0
   "private": true,
   "dependencies": {}
 }
