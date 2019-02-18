@@ -1,0 +1,36 @@
+<h1>Podcasts#index</h1>
+<p>Find me in app/views/podcasts/index.html.erb</p>
+<% @channels.each do |channel| %>
+    <% t = Time.at(channel['earliest_pub_date_ms'] / 1000) %>
+    <img src="<%= channel['thumbnail'] %>" />
+    <p>Title: <%= channel['title'] %></p>
+    <p><%= channel['total_episodes'] %> episodes</p>
+    <p>By: <%= channel['publisher'] %></p>
+    <p>Synopsis: <%= channel['description'] %></p>
+    <p>Series Start: <%= t.year %></p>
+    <br><br>
+    <hr>
+    <br><br>
+<% end %>
+<!--
+"lastest_pub_date_ms":1550160120000
+"language":"English"
+"extra":{...}11 items
+"earliest_pub_date_ms":1541794330000
+"rss":"https://www.listennotes.com/c/r/98a00757731b43118e47560a2c185528"
+"image":"https://d3sv2eduhewoas.cloudfront.net/channel/image/a5eb5a81fbfb4f2485219b5fe5eb7d58.jpg"
+"thumbnail":"https://d3sv2eduhewoas.cloudfront.net/channel/image/a5eb5a81fbfb4f2485219b5fe5eb7d58.jpg"
+"explicit_content":false
+"country":"United States"
+"id":"98a00757731b43118e47560a2c185528"
+"description":" Family Secrets. Every family has them. When Dani Shapiro accidentally stumbled upon a massive secret that had been kept from her all her life, she dove headlong into discovering everything she could about how that secret had shaped her reality and her destiny. Then she started talking with other people about their family secrets. Join Dani and her guests as they explore the power of family secrets and the ways in which discovering – and revealing – the truth can liberate us. Coming February 14th. "
+"itunes_id":1441824608
+"website":NULL
+"looking_for":{...}4 items
+"total_episodes":3
+"is_claimed":false
+"publisher":"iHeartRadio"
+"title":"Family Secrets"
+"email":"applepodcast@howstuffworks.com"
+"listennotes_url":"https://www.listennotes.com/c/98a
+-->
